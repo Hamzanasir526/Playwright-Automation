@@ -10,7 +10,7 @@ let page;
 let loginPage;
 
 Given('user is on the login page', async function () {
-  browser = await chromium.launch({ headless: false });
+  browser = await chromium.launch({ headless: true });
   page = await browser.newPage();
   loginPage = new LoginPage(page);
 
